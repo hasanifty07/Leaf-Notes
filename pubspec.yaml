@@ -1,0 +1,38 @@
+name: leaf_notes
+description: A simple, offline notebook app.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.4
+  uuid: ^4.4.0
+  supabase_flutter: ^2.8.0
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+# Config for the flutter_launcher_icons package (see earlier setup).
+# Run: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "assets/icon/adaptive_background.png"
+  adaptive_icon_foreground: "assets/icon/adaptive_foreground.png"
+  min_sdk_android: 21
